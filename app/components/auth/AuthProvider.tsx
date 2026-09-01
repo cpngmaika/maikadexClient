@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState } from "react"
 import type { User, AuthContextType } from "@/types/auth";
-import { getCurrentUser, logout } from "@/lib/auth/auth.api";
+import { getCurrentUser, logout as logoutApi } from "@/lib/auth/auth.api";
 
 const AuthContext = createContext<AuthContextType | undefined>(
     undefined
@@ -33,11 +33,15 @@ export function AuthProvider({
 
     const logout = async () => {
         try {
-            await logout();
+            await logoutApi();
             setUser(null);
         } catch (error) {
             console.error(error);
         }
+    };
+
+    const loginContext = (user: User) => {
+        setUser(user);
     };
 
     return (
@@ -45,6 +49,7 @@ export function AuthProvider({
             value={{
                 user,
                 loading,
+                loginContext,
                 logout,
             }}
         >

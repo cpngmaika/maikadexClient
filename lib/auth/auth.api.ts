@@ -21,3 +21,17 @@ export async function logout(): Promise<void> {
         credentials: "include",
     });
 }
+
+export async function login(email: string, password: string): Promise<User> {
+    const res = await fetch(`${API_URL}/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ email, password }),
+    });
+    if (!res.ok) {
+        throw new Error("Đăng nhập thất bại");
+    }
+    const data = await res.json();
+    return data.user;
+}

@@ -17,10 +17,10 @@ export default function Navbar() {
                 </Link>
             ) : (
                 <Link
-                    href="/login"
+                    href="/auth/register"
                     className="text-xl font-bold hover:text-gray-600"
                 >
-                    Login
+                    Register
                 </Link>
             )}
 
