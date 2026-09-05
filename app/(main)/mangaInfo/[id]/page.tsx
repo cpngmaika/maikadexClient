@@ -29,6 +29,17 @@ export default async function MangaInfoPage({
                     />
                 )}
                 <h1 className="text-xl font-bold mt-4">{manga.title}</h1>
+                {/* tag */}
+                <div className="flex flex-wrap gap-1.5 mt-3">
+                    {manga.tags?.map((tag: string) => (
+                        <span
+                            key={tag}
+                            className="bg-neutral-800 text-neutral-200 text-xs px-2.5 py-1 rounded-md"
+                        >
+                            {tag}
+                        </span>
+                    ))}
+                </div>
             </div>
 
             <div className="w-full md:w-3/4">
