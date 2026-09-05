@@ -4,188 +4,193 @@ export interface Theme extends Tag { }
 
 export const themes: Theme[] = [
     {
-        name: "Aliens",
-        description:
-            "Focuses on characters from other planets or dimensions."
+        "id": "e64f6742-c834-471d-8d72-dd51fc02b835",
+        "name": "Aliens",
+        "description": ""
     },
     {
-        name: "Animals",
-        description:
-            "Stories involving non-human animals, often as main characters or with human-like traits."
+        "id": "3de8c75d-8ee3-48ff-98ee-e20a65c86451",
+        "name": "Animals",
+        "description": ""
     },
     {
-        name: "Cooking",
-        description:
-            "Food preparation, enjoyment, or analysis is central to the plot."
+        "id": "ea2bc92d-1c26-4930-9b7c-d5c0dc1b6869",
+        "name": "Cooking",
+        "description": ""
     },
     {
-        name: "Crossdressing",
-        description:
-            "Characters wear clothing traditionally associated with the opposite sex."
+        "id": "9ab53f92-3eed-4e9b-903a-917c86035ee3",
+        "name": "Crossdressing",
+        "description": ""
     },
     {
-        name: "Delinquents",
-        description:
-            "Stories about high schoolers who defy societal norms, often involving fights and friendships."
+        "id": "da2d50ca-3018-4cc0-ac7a-6b7d472a29ea",
+        "name": "Delinquents",
+        "description": ""
     },
     {
-        name: "Demons",
-        description:
-            "Intelligent, often malevolent, creatures from hell or dark mythology."
+        "id": "39730448-9a5f-48a2-85b0-a70db87b1233",
+        "name": "Demons",
+        "description": ""
     },
     {
-        name: "Genderswap",
-        description:
-            "Characters switch sex, either temporarily or permanently."
+        "id": "2bd2e8d0-f146-434a-9b51-fc9ff2c5fe6a",
+        "name": "Genderswap",
+        "description": ""
     },
     {
-        name: "Ghosts",
-        description:
-            "Features spirits of deceased individuals."
+        "id": "3bb26d85-09d5-4d2e-880c-c34b974339e9",
+        "name": "Ghosts",
+        "description": ""
     },
     {
-        name: "Gyaru",
-        description:
-            "Focuses on the Japanese subculture of trendy, Westernized fashion and behavior."
+        "id": "fad12b5e-68ba-460e-b933-9ae8318f5b65",
+        "name": "Gyaru",
+        "description": ""
     },
     {
-        name: "Harem",
-        description:
-            "At least three female characters compete for the male protagonist's affection."
+        "id": "aafb99c1-7f60-43fa-b75f-fc9502ce29c7",
+        "name": "Harem",
+        "description": ""
     },
     {
-        name: "Incest",
-        description:
-            "Sexual relationships between family members."
+        "id": "5bd0e105-4481-44ca-b6e7-7544da56b1a3",
+        "name": "Incest",
+        "description": ""
     },
     {
-        name: "Loli",
-        description:
-            "Features young or childlike female characters with suggestive undertones. This tag can only be used for works rated \"Suggestive\" or higher."
+        "id": "2d1f5d56-a1e5-4d0d-a961-2193588b08ec",
+        "name": "Loli",
+        "description": ""
     },
     {
-        name: "Mafia",
-        description:
-            "Centers around organized crime."
+        "id": "85daba54-a71c-4554-8a28-9901a8b0afad",
+        "name": "Mafia",
+        "description": ""
     },
     {
-        name: "Magic",
-        description:
-            "Features mystical or supernatural elements."
+        "id": "a1f53773-c69a-4ce5-8cab-fffcd90b1565",
+        "name": "Magic",
+        "description": ""
     },
     {
-        name: "Martial Arts",
-        description:
-            "Stories focused on combat techniques developed for self-defense or sport."
+        "id": "cb562697-929f-4d28-9d66-6d3995bf2592",
+        "name": "Mahjong",
+        "description": ""
     },
     {
-        name: "Military",
-        description:
-            "Involves armed forces, warfare, or military tactics."
+        "id": "799c202e-7daa-44eb-9cf7-8a3c0441531e",
+        "name": "Martial Arts",
+        "description": ""
     },
     {
-        name: "Monster Girls",
-        description:
-            "Female characters depicted as supernatural creatures."
+        "id": "ac72833b-c4e9-4878-b9db-6c8a4a99444a",
+        "name": "Military",
+        "description": ""
     },
     {
-        name: "Monsters",
-        description:
-            "Non-human creatures that play a central role in the plot."
+        "id": "dd1f77c5-dea9-4e2b-97ae-224af09caf99",
+        "name": "Monster Girls",
+        "description": ""
     },
     {
-        name: "Music",
-        description:
-            "Music plays a significant role in the story or the characters' lives."
+        "id": "36fd93ea-e8b8-445e-b836-358f02b3d33d",
+        "name": "Monsters",
+        "description": ""
     },
     {
-        name: "Ninja",
-        description:
-            "Covert operatives using martial arts and stealth techniques."
+        "id": "f42fbf9e-188a-447b-9fdc-f19dc1e4d685",
+        "name": "Music",
+        "description": ""
     },
     {
-        name: "Office Workers",
-        description:
-            "Focused on workplace life and professional interactions."
+        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+        "name": "Ninja",
+        "description": ""
     },
     {
-        name: "Police",
-        description:
-            "Law enforcement characters involved in crime-solving."
+        "id": "92d6d951-ca5e-429c-ac78-451071cbf064",
+        "name": "Office Workers",
+        "description": ""
     },
     {
-        name: "Post-Apocalyptic",
-        description:
-            "Set after a catastrophic event that has devastated society."
+        "id": "df33b754-73a3-4c54-80e6-1a74a8058539",
+        "name": "Police",
+        "description": ""
     },
     {
-        name: "Reincarnation",
-        description:
-            "Protagonists are reborn in another world or time."
+        "id": "9467335a-1b83-4497-9231-765337a00b96",
+        "name": "Post-Apocalyptic",
+        "description": ""
     },
     {
-        name: "Reverse Harem",
-        description:
-            "At least two male characters competing for the affection of a female protagonist."
+        "id": "0bc90acb-ccc1-44ca-a34a-b9f3a73259d0",
+        "name": "Reincarnation",
+        "description": ""
     },
     {
-        name: "Samurai",
-        description:
-            "Focuses on traditional Japanese warriors and their culture."
+        "id": "65761a2a-415e-47f3-bef2-a9dababba7a6",
+        "name": "Reverse Harem",
+        "description": ""
     },
     {
-        name: "School Life",
-        description:
-            "Set in or around a school, with student characters."
+        "id": "81183756-1453-4c81-aa9e-f6e1b63be016",
+        "name": "Samurai",
+        "description": ""
     },
     {
-        name: "Shota",
-        description:
-            "Features young or childlike male characters with suggestive undertones. This tag can only be used for works rated \"Suggestive\" or higher."
+        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+        "name": "School Life",
+        "description": ""
     },
     {
-        name: "Supernatural",
-        description:
-            "Involves otherworldly elements such as ghosts, urban legends, or paranormal phenomena."
+        "id": "ddefd648-5140-4e5f-ba18-4eca4071d19b",
+        "name": "Shota",
+        "description": ""
     },
     {
-        name: "Survival",
-        description:
-            "Characters face extreme circumstances where they must fight for survival."
+        "id": "eabc5b4c-6aff-42f3-b657-3e90cbd00b75",
+        "name": "Supernatural",
+        "description": ""
     },
     {
-        name: "Time Travel",
-        description:
-            "Characters travel through time."
+        "id": "5fff9cde-849c-4d78-aab0-0d52b2ee1d25",
+        "name": "Survival",
+        "description": ""
     },
     {
-        name: "Traditional Games",
-        description:
-            "Games that reflect the setting's culture or folklore."
+        "id": "292e862b-2d17-4062-90a2-0356caa4ae27",
+        "name": "Time Travel",
+        "description": ""
     },
     {
-        name: "Vampires",
-        description:
-            "Features blood-drinking, immortal beings with supernatural traits."
+        "id": "31932a7e-5b8e-49a6-9f12-2afa39dc544c",
+        "name": "Traditional Games",
+        "description": ""
     },
     {
-        name: "Video Games",
-        description:
-            "Stories centered around electronic gaming."
+        "id": "d7d1730f-6eb0-4ba6-9437-602cac38664c",
+        "name": "Vampires",
+        "description": ""
     },
     {
-        name: "Villainess",
-        description:
-            "A subgenre of isekai where a female antagonist often has prior knowledge of the world she inhabits."
+        "id": "9438db5a-7e2a-4ac0-b39e-e0d95a34b8a8",
+        "name": "Video Games",
+        "description": ""
     },
     {
-        name: "Virtual Reality",
-        description:
-            "Characters interact in a fully simulated digital world."
+        "id": "d14322ac-4d6f-4e9b-afd9-629d5f4d8a41",
+        "name": "Villainess",
+        "description": ""
     },
     {
-        name: "Zombies",
-        description:
-            "Reanimated corpses that play a central role in the story."
+        "id": "8c86611e-fab7-4986-9dec-d1a2f44acdd5",
+        "name": "Virtual Reality",
+        "description": ""
+    },
+    {
+        "id": "631ef465-9aba-4afb-b0fc-ea10efe274a8",
+        "name": "Zombies",
+        "description": ""
     }
 ];

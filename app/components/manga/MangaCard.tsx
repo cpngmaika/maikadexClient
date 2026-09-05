@@ -10,7 +10,10 @@ interface MangaCardProps {
 
 export default function MangaCard({ manga, coverUrl }: MangaCardProps) {
     return (
-        <div className="overflow-hidden rounded-xl border border-gray-200 bg-white p-3 shadow-sm">
+        <Link
+            href={`/mangaInfo/${manga.id}`}
+            className="block overflow-hidden rounded-xl border border-gray-200 bg-white p-3 shadow-sm"
+        >
             <img
                 src={coverUrl}
                 alt={manga.title}
@@ -19,11 +22,9 @@ export default function MangaCard({ manga, coverUrl }: MangaCardProps) {
 
             <div className="pt-3">
                 <h2 className="line-clamp-2 text-sm font-semibold text-gray-800">
-                    <Link href={`/mangaInfo/${manga.id}`}>
-                        {manga.title}
-                    </Link>
+                    {manga.title}
                 </h2>
             </div>
-        </div>
+        </Link>
     );
 }

@@ -24,7 +24,7 @@ export default async function readPage({
     let chapterTitle = chapterInfo ? `Chapter ${chapterInfo.chapter}${chapterInfo.title ? ` - ${chapterInfo.title}` : ""}` : "Đang đọc";
 
     if (chapterInfo && chapterInfo.mangaId) {
-        const allChapters = await getChapters(chapterInfo.mangaId);
+        const allChapters = await getChapters(chapterInfo.mangaId, chapterInfo.language);
         
         const groupChapters = allChapters.filter(
             (c: Chapter) => c.trans_group === chapterInfo.trans_group

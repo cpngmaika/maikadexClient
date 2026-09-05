@@ -6,27 +6,38 @@ export async function advancedSearch(params: AdvancedSearchParams) {
         title,
         includedTagIDs = [],
         excludedTagIDs = [],
-        contentRating = ['safe', 'suggestive', 'erotica'],
+        contentRating = ["safe", "suggestive", "erotica"],
         publicationDemographic,
         status,
         year,
+        offset = 0,
         limit = 20,
-        offset = 0
     } = params;
 
-    const response = await mangadexClient.get(`/manga`, {
+    const response = await mangadexClient.get("/manga", {
         params: {
             title: title || undefined,
-            includedTags: includedTagIDs.length > 0 ? includedTagIDs : undefined,
-            excludedTags: excludedTagIDs.length > 0 ? excludedTagIDs : undefined,
-            contentRating: contentRating,
-            publicationDemographic: publicationDemographic,
-            status: status,
-            year: year,
-            limit,
+
+            includedTags:
+                includedTagIDs.length > 0
+                    ? includedTagIDs
+                    : undefined,
+
+            excludedTags:
+                excludedTagIDs.length > 0
+                    ? excludedTagIDs
+                    : undefined,
+
+            contentRating,
+            publicationDemographic,
+            status,
+            year,
+
             offset,
-            'includes[]': ['cover_art', 'author']
-        }
+            limit,
+
+            "includes[]": ["cover_art", "author"],
+        },
     });
 
     return response.data;

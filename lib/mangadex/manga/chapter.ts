@@ -1,12 +1,13 @@
 import { mangadexClient } from "@/lib/mangadex/client"
 
-export async function getChapters(mangaID: string) {
+export async function getChapters(mangaID: string, language: string = 'vi') {
     try {
         const response = await mangadexClient.get(
             `/manga/${mangaID}/feed`,
             {
                 params: {
                     "includes[]": "scanlation_group",
+                    "translatedLanguage[]": [language],
                 },
             }
         );
@@ -45,6 +46,7 @@ export async function getChapterById(chapterId: string) {
             chapter: Number(chapter.attributes.chapter),
             title: chapter.attributes.title,
             mangaId: manga?.id,
+            language: chapter.attributes.translatedLanguage,
             trans_group: group?.attributes?.name ?? (group?.id ? "Không rõ" : "Không có nhóm"),
         };
     } catch (error) {

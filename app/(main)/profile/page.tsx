@@ -6,7 +6,7 @@ export default function profilePage() {
     return (
         <div>
             <h1>profile</h1>
-            <Link href='/auth/changePassword'>đổi mật khẩu</Link>
+            <Link href='/auth/change-password'>đổi mật khẩu</Link>
         </div>
     )
 }

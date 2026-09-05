@@ -4,129 +4,128 @@ export interface Genre extends Tag { }
 
 export const genres: Genre[] = [
     {
-        name: "Action",
-        description:
-            "Focuses heavily on combat and fight scenes."
+        "id": "391b0423-d847-456f-aff0-8b0cfc03066b",
+        "name": "Action",
+        "description": ""
     },
     {
-        name: "Adventure",
-        description:
-            "Characters embark on a journey, whether for exploration or to achieve a specific goal."
+        "id": "87cc87cd-a395-47af-b27a-93258283bbc6",
+        "name": "Adventure",
+        "description": ""
     },
     {
-        name: "Boys' Love",
-        description:
-            "Stories centered on romantic or sexual relationships between male characters. This genre encompasses various levels of explicitness."
+        "id": "5920b825-4181-4a17-beeb-9918b0ff7a30",
+        "name": "Boys' Love",
+        "description": ""
     },
     {
-        name: "Comedy",
-        description:
-            "Intended to entertain or provoke laughter."
+        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+        "name": "Comedy",
+        "description": ""
     },
     {
-        name: "Crime",
-        description:
-            "Focuses on criminal activities from either the perspective of law enforcement or criminals."
+        "id": "5ca48985-9a9d-4bd8-be29-80dc0303db72",
+        "name": "Crime",
+        "description": ""
     },
     {
-        name: "Drama",
-        description:
-            "Character-driven stories with emotionally intense situations and relationships."
+        "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+        "name": "Drama",
+        "description": ""
     },
     {
-        name: "Fantasy",
-        description:
-            "Stories set in fantastical worlds, often involving magic, mythical creatures, or medieval settings."
+        "id": "cdc58593-87dd-415e-bbc0-2ec27bf404cc",
+        "name": "Fantasy",
+        "description": ""
     },
     {
-        name: "Girls' Love",
-        description:
-            "Stories centered on romantic or sexual relationships between female characters. Like Boys' Love, content may vary in explicitness."
+        "id": "a3c67850-4684-404e-9b7f-c69850ee5da6",
+        "name": "Girls' Love",
+        "description": ""
     },
     {
-        name: "Historical",
-        description:
-            "Set in the past, whether based on real-world history or a fictionalized historical period."
+        "id": "33771934-028e-4cb3-8744-691e866a923e",
+        "name": "Historical",
+        "description": ""
     },
     {
-        name: "Horror",
-        description:
-            "Intended to evoke fear or suspense."
+        "id": "cdad7e68-1419-41dd-bdce-27753074a640",
+        "name": "Horror",
+        "description": ""
     },
     {
-        name: "Isekai",
-        description:
-            "The protagonist is transported to another world, time, or virtual realm."
+        "id": "ace04997-f6bd-436e-b261-779182193d3d",
+        "name": "Isekai",
+        "description": ""
     },
     {
-        name: "Magical Girls",
-        description:
-            "Focuses on girls (or occasionally boys) who use magical powers and often transform to battle evil forces."
+        "id": "81c836c9-914a-4eca-981a-560dad663e73",
+        "name": "Magical Girls",
+        "description": ""
     },
     {
-        name: "Mecha",
-        description:
-            "Features large, often humanoid robots engaged in combat."
+        "id": "50880a9d-5440-4732-9afb-8f457127e836",
+        "name": "Mecha",
+        "description": ""
     },
     {
-        name: "Medical",
-        description:
-            "Stories centered around the medical profession or healthcare."
+        "id": "c8cbe35b-1b2b-4a3f-9c37-db84c4514856",
+        "name": "Medical",
+        "description": ""
     },
     {
-        name: "Mystery",
-        description:
-            "Characters are faced with a problem or secret they must solve or uncover."
+        "id": "ee968100-4191-4968-93d3-f82d72be7e46",
+        "name": "Mystery",
+        "description": ""
     },
     {
-        name: "Philosophical",
-        description:
-            "Explores existential or moral questions through its characters or plot."
+        "id": "b1e97889-25b4-4258-b28b-cd7f4d28ea9b",
+        "name": "Philosophical",
+        "description": ""
     },
     {
-        name: "Psychological",
-        description:
-            "Focuses on the internal, emotional, and mental struggles of the characters."
+        "id": "3b60b75c-a2d7-4860-ab56-05f391bb889c",
+        "name": "Psychological",
+        "description": ""
     },
     {
-        name: "Romance",
-        description:
-            "Centers on the development of romantic relationships."
+        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+        "name": "Romance",
+        "description": ""
     },
     {
-        name: "Sci-Fi",
-        description:
-            "Stories centered on science and technology, often set in the future or in alternate realities."
+        "id": "256c8bd9-4904-4360-bf4f-508a76d67183",
+        "name": "Sci-Fi",
+        "description": ""
     },
     {
-        name: "Slice of Life",
-        description:
-            "Depicts everyday life with minimal drama or conflict."
+        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+        "name": "Slice of Life",
+        "description": ""
     },
     {
-        name: "Sports",
-        description:
-            "Focuses on athletic activities or competitions."
+        "id": "69964a64-2f90-4d33-beeb-f3ed2875eb4c",
+        "name": "Sports",
+        "description": ""
     },
     {
-        name: "Superhero",
-        description:
-            "Features characters with superhuman abilities who are identified as heroes."
+        "id": "7064a261-a137-4d3a-8848-2d385de3a99c",
+        "name": "Superhero",
+        "description": ""
     },
     {
-        name: "Thriller",
-        description:
-            "Dark, suspenseful stories that build tension and anxiety."
+        "id": "07251805-a27e-4d59-b488-f0bfbec15168",
+        "name": "Thriller",
+        "description": ""
     },
     {
-        name: "Tragedy",
-        description:
-            "Focuses on suffering and loss, often leading to emotional catharsis."
+        "id": "f8f62932-27da-4fe4-8ee1-6779a8c5edba",
+        "name": "Tragedy",
+        "description": ""
     },
     {
-        name: "Wuxia",
-        description:
-            "Chinese fiction centered on martial artists in a fantastical setting."
+        "id": "acc803a4-c95a-4c22-86fc-eb6b582d82a2",
+        "name": "Wuxia",
+        "description": ""
     }
 ];
-

@@ -4,11 +4,13 @@ export interface ContentWarning extends Tag { }
 
 export const contentWarnings: ContentWarning[] = [
     {
-        name: "Gore",
-        description: "Detailed depictions of violence or physical trauma, including excessive"
+        "id": "b29d6a3d-1569-4e7a-8caf-7557bc92cd5d",
+        "name": "Gore",
+        "description": ""
     },
     {
-        name: "Sexual Violence",
-        description: "Depicts themes or scenes involving rape, sexual assault, or any other non-consensual sexual acts. Incidents that involve coercion or forced intimacy should be tagged here."
+        "id": "97893a4c-12af-4dac-b6be-0dffb353568e",
+        "name": "Sexual Violence",
+        "description": ""
     }
 ];
