@@ -1,4 +1,5 @@
 import { mangadexClient } from "@/lib/mangadex/client";
+import { checkIsAdultContent } from "./isSensitiveContent";
 
 // search for manga and cover
 export async function searchManga(title: string) {
@@ -26,6 +27,7 @@ export async function searchManga(title: string) {
                 coverFileName: cover
                     ? cover.attributes.fileName
                     : null,
+                isSensitive: checkIsAdultContent(manga),
             };
         });
     } catch (error) {

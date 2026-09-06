@@ -1,5 +1,6 @@
 import { mangadexClient } from "@/lib/mangadex/client";
 import type { Manga } from "@/types/manga";
+import { checkIsAdultContent } from "./isSensitiveContent";
 
 export async function getChapters(mangaId: string) {
     try {
@@ -48,6 +49,7 @@ export async function getAtHomeMangas(page: number = 1, limit: number = 20): Pro
                 coverFileName: cover
                     ? cover.attributes.fileName
                     : null,
+                isSensitive: checkIsAdultContent(manga),
             };
         });
         

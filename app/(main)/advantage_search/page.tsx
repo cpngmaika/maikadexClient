@@ -103,6 +103,8 @@ export default function AdvantageSearch() {
                     coverUrl: coverFileName
                         ? `https://uploads.mangadex.org/covers/${manga.id}/${coverFileName}`
                         : "",
+                    isSensitive: ['erotica', 'pornographic'].includes(manga.attributes?.contentRating) || 
+                                 manga.attributes?.tags?.some((t: any) => t.attributes?.group === 'content'),
                 };
             });
             setMangas(mangaList);
