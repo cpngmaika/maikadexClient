@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import MangaSearch from "@/app/components/manga/MangaSearch";
+import TagDropdown from "./TagDropdown";
 import { useAuth } from "@/app/components/auth/AuthProvider";
 import { useRouter, usePathname } from "next/navigation";
 import { motion } from "motion/react";
@@ -76,35 +77,39 @@ export default function Navbar() {
                         const isHoveredOrActive = (hoveredPath || activeHref) === item.href;
 
                         return (
-                            <Link
-                                key={item.href}
-                                href={item.href}
-                                scroll={false}
-                                onMouseEnter={() => setHoveredPath(item.href)}
-                                className="relative flex items-center gap-2 px-5 py-2.5 transition-colors"
-                            >
-                                {/* Nền trượt chuyển động linh hoạt giữa hover và active */}
-                                {isHoveredOrActive && (
-                                    <motion.div
-                                        layoutId="navbar-hover-bubble"
-                                        layout="position"
-                                        className="absolute inset-0 rounded-lg bg-[#18C3C3] shadow-sm"
-                                        transition={{
-                                            x: { type: "spring", stiffness: 450, damping: 32 },
-                                            y: { duration: 0 },
-                                            default: { duration: 0 }
-                                        }}
-                                    />
+                            <div key={item.href} className="relative group" onMouseEnter={() => setHoveredPath(item.href)}>
+                                <Link
+                                    href={item.href}
+                                    scroll={false}
+                                    className="relative flex items-center gap-2 px-5 py-2.5 transition-colors"
+                                >
+                                    {/* Nền trượt chuyển động linh hoạt giữa hover và active */}
+                                    {isHoveredOrActive && (
+                                        <motion.div
+                                            layoutId="navbar-hover-bubble"
+                                            layout="position"
+                                            className="absolute inset-0 rounded-lg bg-[#18C3C3] shadow-sm"
+                                            transition={{
+                                                x: { type: "spring", stiffness: 450, damping: 32 },
+                                                y: { duration: 0 },
+                                                default: { duration: 0 }
+                                            }}
+                                        />
+                                    )}
+
+                                    <span className={`relative z-10 transition-colors duration-200 ${isHoveredOrActive ? "text-white" : "text-[#2D314E]"}`}>
+                                        {item.icon}
+                                    </span>
+
+                                    <span className={`relative z-10 text-sm font-bold uppercase tracking-widest transition-colors duration-200 ${isHoveredOrActive ? "text-white" : "text-[#2D314E]"}`}>
+                                        {item.label}
+                                    </span>
+                                </Link>
+
+                                {item.href === '/tag' && hoveredPath === '/tag' && (
+                                    <TagDropdown />
                                 )}
-
-                                <span className={`relative z-10 transition-colors duration-200 ${isHoveredOrActive ? "text-white" : "text-[#2D314E]"}`}>
-                                    {item.icon}
-                                </span>
-
-                                <span className={`relative z-10 text-sm font-bold uppercase tracking-widest transition-colors duration-200 ${isHoveredOrActive ? "text-white" : "text-[#2D314E]"}`}>
-                                    {item.label}
-                                </span>
-                            </Link>
+                            </div>
                         );
                     })}
                 </nav>
