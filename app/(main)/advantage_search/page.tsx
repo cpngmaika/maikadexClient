@@ -103,8 +103,8 @@ export default function AdvantageSearch() {
                     coverUrl: coverFileName
                         ? `https://uploads.mangadex.org/covers/${manga.id}/${coverFileName}`
                         : "",
-                    isSensitive: ['erotica', 'pornographic'].includes(manga.attributes?.contentRating) || 
-                                 manga.attributes?.tags?.some((t: any) => t.attributes?.group === 'content'),
+                    isSensitive: ['erotica', 'pornographic'].includes(manga.attributes?.contentRating) ||
+                        manga.attributes?.tags?.some((t: any) => t.attributes?.group === 'content'),
                 };
             });
             setMangas(mangaList);
@@ -159,10 +159,10 @@ export default function AdvantageSearch() {
                                         type="button"
                                         onClick={() => toggleTag(tagId)}
                                         className={`inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-bold shadow-sm transition-all ${included
-                                                ? "border-[#00b4c5] bg-[#00b4c5] text-white"
-                                                : excluded
-                                                    ? "border-red-500 bg-red-500 text-white"
-                                                    : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
+                                            ? "border-[#00b4c5] bg-[#00b4c5] text-white"
+                                            : excluded
+                                                ? "border-red-500 bg-red-500 text-white"
+                                                : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
                                             }`}
                                     >
                                         {included && <span>✓</span>}
@@ -190,8 +190,8 @@ export default function AdvantageSearch() {
                                 type="button"
                                 onClick={() => toggleDemographic(value)}
                                 className={`rounded-full border px-4 py-1.5 text-sm font-bold shadow-sm transition-all ${selected
-                                        ? "border-[#00b4c5] bg-[#00b4c5] text-white"
-                                        : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
+                                    ? "border-[#00b4c5] bg-[#00b4c5] text-white"
+                                    : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
                                     }`}
                             >
                                 {item.name}
@@ -215,8 +215,8 @@ export default function AdvantageSearch() {
                                 type="button"
                                 onClick={() => toggleStatus(value)}
                                 className={`rounded-full border px-4 py-1.5 text-sm font-bold shadow-sm transition-all ${selected
-                                        ? "border-[#00b4c5] bg-[#00b4c5] text-white"
-                                        : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
+                                    ? "border-[#00b4c5] bg-[#00b4c5] text-white"
+                                    : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
                                     }`}
                             >
                                 {item.name}
@@ -240,8 +240,8 @@ export default function AdvantageSearch() {
                                 type="button"
                                 onClick={() => toggleContentRating(value)}
                                 className={`rounded-full border px-4 py-1.5 text-sm font-bold shadow-sm transition-all ${selected
-                                        ? "border-[#00b4c5] bg-[#00b4c5] text-white"
-                                        : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
+                                    ? "border-[#00b4c5] bg-[#00b4c5] text-white"
+                                    : "border-gray-200 bg-white text-[#54587A] hover:border-[#00b4c5] hover:text-[#00b4c5]"
                                     }`}
                             >
                                 {item.name}

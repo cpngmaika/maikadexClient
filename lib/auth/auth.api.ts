@@ -1,6 +1,6 @@
 import type { User } from "../../types/auth";
 
-const API_URL = "http://localhost:3001";
+const API_URL = process.env.NEXT_PUBLIC_SERVER_API_URL || "http://localhost:3001";
 
 export async function getCurrentUser(): Promise<User | null> {
     const res = await fetch(`${API_URL}/me`, {
