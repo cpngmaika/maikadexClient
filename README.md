@@ -50,3 +50,5 @@ This application acts as a third-party client and strictly utilizes the public *
 5. **No Direct Scraping**: Always use the official REST API endpoints. Do not scrape HTML pages from the MangaDex website.
 
 For full terms and conditions, please refer to the official [MangaDex API Documentation](https://api.mangadex.org/docs/).
+
+You can test at [https://maikadex-client.vercel.app/](https://maikadex-client.vercel.app/)
