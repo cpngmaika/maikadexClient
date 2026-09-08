@@ -6,7 +6,8 @@ import Footer from "./components/ui/footer";
 
 export const metadata: Metadata = {
   title: "MaikaDex",
-  description: "lmao",
+  description: "MangaDex Third-Party Client",
+  referrer: "no-referrer",
 };
 
 export default function RootLayout({
@@ -16,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="referrer" content="no-referrer" />
+      </head>
       <body className="relative text-slate-900">
         {/* Nền họa tiết lưới mờ kết hợp gradient blob */}
         <div className="fixed inset-0 -z-10 h-full w-full bg-slate-50 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">

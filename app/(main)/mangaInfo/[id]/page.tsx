@@ -35,6 +35,7 @@ export default async function MangaInfoPage({
                                 src={`https://uploads.mangadex.org/covers/${manga.id}/${manga.coverFileName}.512.jpg`}
                                 alt={manga.title}
                                 className="w-full rounded-lg shadow-md object-cover aspect-[2/3]"
+                                referrerPolicy="no-referrer"
                             />
                         </div>
                     ) : (

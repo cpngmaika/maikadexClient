@@ -25,6 +25,7 @@ export default function ReadChapter({ images = [], navigation }: ReaderProps) {
                     src={image}
                     alt={`Page ${index + 1}`}
                     className="max-w-full"
+                    referrerPolicy="no-referrer"
                 />
             ))}
 

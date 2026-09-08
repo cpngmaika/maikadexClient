@@ -19,6 +19,7 @@ export default function CoverImage({ src, alt, isBlurred }: CoverImageProps) {
                 src={src}
                 alt={alt}
                 className={`h-full w-full object-cover transition-all duration-300 ${shouldBlur ? 'blur-xl scale-110' : ''}`}
+                referrerPolicy="no-referrer"
             />
             {shouldBlur && (
                 <div 
