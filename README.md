@@ -1,7 +1,5 @@
 # MaikaDex Client
 
-*(Bản tiếng Việt ở bên dưới - Vietnamese version below)*
-
 MaikaDex Client is a web application for reading manga, built on top of the [MangaDex API](https://api.mangadex.org/docs/). This client allows users to search, filter, and read manga seamlessly with a modern and intuitive user interface.
 
 ## Table of Contents
